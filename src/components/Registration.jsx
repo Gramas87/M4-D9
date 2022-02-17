@@ -2,20 +2,35 @@ import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
 
 const Registration = () => {
-  const [validName, setValidName] = useState(false);
+  /*{const [validName, setValidName] = useState(false);
   const [validSurname, setValidSurname] = useState(false);
   const [validEmail, setValidEmail] = useState(false);
-  const [validPassword, setValidPassword] = useState(false);
-  const [validCheckPassword, setValidCheckPassword] = useState(false);
+  const [validPassword, setValidPassword] = useState(false);}*/
+
+   const [validName, setValidName] = useState("");
+  const [validSurname, setValidSurname] = useState("");
+  const [validEmail, setValidEmail] = useState("");
+  const [validPassword, setValidPassword] = useState("");
+  const [PasswordCheck, setPasswordCheck] = useState("")
+   
+  const setName = () => {
+      
+  }
 
   const [validSubmit, checkValidSubmit] = useState(false)
 
   const checkPassword = () => {
-
+     
   }
   
-const enable = () => {
+/*{const enable = () => {
     if (validName && validSurname && validEmail && validPassword===true) {
+        checkValidSubmit(true)
+    }
+}}*/
+
+const buttonEnable = () => {
+    if ((validName.length>=2) && (validSurname.length>=3)) {
         checkValidSubmit(true)
     }
 }
