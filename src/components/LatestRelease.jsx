@@ -3,6 +3,7 @@ import SingleBook from "./SingleBook";
 import { Container, Row, Col } from "react-bootstrap";
 import CommentArea from "./CommentArea";
 import {useState } from "react";
+import Welcome from './Welcome'
 
 const LatestRelease = () => {
   const [selected, SetSelected] = useState("");
@@ -16,6 +17,7 @@ const LatestRelease = () => {
 
   return (
     <Container fluid>
+       <Welcome />
       <Row>
         <Col md={10}>
           <div className="bg-dark row">
