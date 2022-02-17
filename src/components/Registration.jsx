@@ -17,6 +17,8 @@ const Registration = () => {
       
   }
 
+  
+
   const [validSubmit, checkValidSubmit] = useState(false)
 
   const checkPassword = () => {
@@ -30,7 +32,7 @@ const Registration = () => {
 }}*/
 
 const buttonEnable = () => {
-    if ((validName.length>=2) && (validSurname.length>=3)) {
+    if ((validName.length>=2) && (validSurname.length>=3) && (validEmail.includes()) )   {
         checkValidSubmit(true)
     }
 }
